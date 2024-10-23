@@ -1,3 +1,11 @@
+:root {
+  --main-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --main-font: Raleway, sans-serif;
+  --accent-font: 'STIX Two Text', serif 
+}
+
 *,
 *::before,
 *::after {
@@ -111,6 +119,10 @@ a:focus-visible, .header__theme-button:focus-visible {
   z-index: -1;
 }
 
+.theme_dark .header__theme-button_is-active::after {
+  background-image: url("/images/pattern.svg");
+}
+
 .content__title {
   font-size: 30px;
   margin-block-start: 7%;
@@ -158,6 +170,10 @@ a:focus-visible, .header__theme-button:focus-visible {
   margin-block-end: 10px;
 }
 
+.theme_dark .content__list-item::before {
+  background-image: url('/images/marker-dark.svg');
+}
+
 .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
   font-weight: bold;
   display: inline-block;
@@ -166,6 +182,10 @@ a:focus-visible, .header__theme-button:focus-visible {
   background-color: var(--accent-color);
   padding: 0 4px;
   margin-inline-end: 1px;
+}
+
+.theme_dark .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
+  border: 1px solid var(--text-color);
 }
 
 .content__figure {
@@ -219,6 +239,10 @@ a:focus-visible, .header__theme-button:focus-visible {
   z-index: -1;
 }
 
+.theme_dark .colored-text::after {
+  background-image: url("/images/pattern.svg");
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -231,4 +255,10 @@ a:focus-visible, .header__theme-button:focus-visible {
 .footer__copyright {
   font-size: 18px;
   text-transform: uppercase;
+}
+
+.theme_dark {
+  --main-color: #171717;
+  --text-color: #B3B3B3;
+  --accent-color: transparent;
 }
