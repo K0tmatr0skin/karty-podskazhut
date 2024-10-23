@@ -96,3 +96,13 @@ a {
 .content__list-item:not(:last-child) {
   margin-block-end: 10px;
 }
+
+.content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 30%;
+  background-color: var(--accent-color);
+  padding: 0 4px;
+  margin-inline-end: 1px;
+}
