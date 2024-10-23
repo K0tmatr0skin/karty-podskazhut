@@ -106,3 +106,21 @@ a {
   padding: 0 4px;
   margin-inline-end: 1px;
 }
+
+.content__figure {
+  position: relative;
+  inline-size: calc(100% + 10vw);
+  right: 5vw;
+  margin-block-start: 7%;
+  margin-block-end: 7%;
+}
+
+.content__picture {
+  inline-size: 100%;
+}
+
+.content__picture-caption {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--text-color);
+}
