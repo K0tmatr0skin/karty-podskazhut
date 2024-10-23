@@ -32,6 +32,11 @@ a {
   color: inherit;
 }
 
+a:focus, button:focus {
+  outline: none;
+}
+
+
 .header {
   padding-block-start: 10%;
 }
@@ -183,6 +188,19 @@ a {
   cursor: pointer;
   background-color: transparent;
   border: none;
+}
+
+a:focus-visible, .header__theme-button:focus-visible {
+  outline: 1px solid var(--text-color);
+  outline-offset: 2px;
+}
+
+.header__theme-button:hover {
+  text-decoration: underline;
+}
+
+.header__theme-button:disabled {
+  pointer-events: none;
 }
 
 .header__theme-button_is-active {
