@@ -62,8 +62,7 @@ a {
   margin-block-end: 1.5em;
 }
 
-.content__blockquote {  
-  font-size: 18px;
+.content__blockquote {
   font-style: italic;
   line-height: 2em;
   width: 75%;
@@ -123,4 +122,36 @@ a {
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid var(--text-color);
+}
+
+.content__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 4/3;
+  margin-block-start: 7%;
+  border: 1px solid var(--text-color);
+}
+
+.content__card-title {
+  font-size: 60px;
+}
+
+.content__card-subtitle {
+  font-size: 18px;
+}
+
+.colored-text {
+  position: relative;
+}
+
+.colored-text::after {
+  position: absolute;
+  content: '';
+  inset: 0.55em 0 0 -2.5%;
+  inline-size: 105%;
+  block-size: 0.25em;
+  background-color: var(--accent-color);
+  z-index: -1;
 }
