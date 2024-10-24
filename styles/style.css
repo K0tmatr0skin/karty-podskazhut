@@ -154,10 +154,12 @@ a:focus-visible, .header__theme-button:focus-visible {
 }
 
 .content__list-item::before {
+  display: block;
   content: '';
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: -25px;
-  display: block;
   inline-size: 15px;
   block-size: 15px;
   background-image: url('/images/marker-light.svg');
@@ -185,7 +187,7 @@ a:focus-visible, .header__theme-button:focus-visible {
 }
 
 .theme_dark .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
-  border: 1px solid var(--text-color);
+  border: 1px solid currentColor;
 }
 
 .content__figure {
@@ -204,7 +206,7 @@ a:focus-visible, .header__theme-button:focus-visible {
   font-size: 18px;
   text-align: center;
   padding: 20px 0;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid currentColor;
 }
 
 .content__card {
@@ -214,7 +216,7 @@ a:focus-visible, .header__theme-button:focus-visible {
   align-items: center;
   aspect-ratio: 4/3;
   margin-block-start: 7%;
-  border: 1px solid var(--text-color);
+  border: 1px solid currentColor;
 }
 
 .content__card-title {
@@ -226,6 +228,7 @@ a:focus-visible, .header__theme-button:focus-visible {
 }
 
 .colored-text {
+  display: inline-block;
   position: relative;
 }
 
@@ -249,7 +252,7 @@ a:focus-visible, .header__theme-button:focus-visible {
   align-items: center;
   margin-block-start: 10%;
   padding: 2.5%;
-  border-top: 1px solid var(--text-color);
+  border-top: 1px solid currentColor;
 }
 
 .footer__copyright {
